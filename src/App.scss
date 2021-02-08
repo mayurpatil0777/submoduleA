@@ -1,5 +1,12 @@
+$textCenter:center;
+$col:#f0f0f0;
+$RED: #E4002B;
+$justifyContentCenter: center;
+$alignItemsCenter: center;
+$row:row;
+
 .App {
-  text-align: center;
+  text-align: $textCenter;
 }
 
 .App-logo {
@@ -14,7 +21,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: $col;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,3 +43,19 @@
     transform: rotate(360deg);
   }
 }
+
+.redButton {
+
+    height: 44;
+
+    background-color: $RED;
+
+    justify-content: $justifyContentCenter;
+
+    align-items: $alignItemsCenter;
+
+    flex-direction: $row;
+
+    border-radius: 200;
+
+  }
